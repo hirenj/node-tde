@@ -1,0 +1,22 @@
+{
+  "name": "node-tde",
+  "version": "0.0.1",
+  "description": "Wrapper around node-tableau-sdk allowing for piping json to data extracts Edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hirenj/node-tde.git"
+  },
+  "author": "joshi@sund.ku.dk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hirenj/node-tde/issues"
+  },
+  "homepage": "https://github.com/hirenj/node-tde",
+  "dependencies": {
+    "tableau-sdk": "hirenj/node-tableau-sdk"
+  }
+}
