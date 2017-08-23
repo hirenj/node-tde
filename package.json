@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/hirenj/node-tde",
   "dependencies": {
-    "tableau-sdk": "hirenj/node-tableau-sdk"
+    "async": "^2.1.1",
+    "tableau-sdk": "hirenj/node-tableau-sdk",
+    "temp": "^0.8.3"
   }
 }
