@@ -19,6 +19,7 @@
   "dependencies": {
     "async": "^2.1.1",
     "tableau-sdk": "hirenj/node-tableau-sdk",
+    "jsonpath-object-transform" : "hirenj/jsonpath-object-transform",
     "temp": "^0.8.3"
   }
 }
