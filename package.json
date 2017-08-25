@@ -4,7 +4,9 @@
   "description": "Wrapper around node-tableau-sdk allowing for piping json to data extracts Edit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha",
+    "lint": "./node_modules/jshint/bin/jshint lib/*.js",
+    "validate" : "npm ls"
   },
   "repository": {
     "type": "git",
@@ -16,10 +18,20 @@
     "url": "https://github.com/hirenj/node-tde/issues"
   },
   "homepage": "https://github.com/hirenj/node-tde",
+  "devDependencies" : {
+    "jshint": "^2.9.2",
+    "precommit-hook": "^3.0.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  },
   "dependencies": {
     "async": "^2.1.1",
     "tableau-sdk": "hirenj/node-tableau-sdk",
     "jsonpath-object-transform" : "hirenj/jsonpath-object-transform",
     "temp": "^0.8.3"
-  }
+  },
+  "pre-commit" : [
+    "lint",
+    "validate"
+  ]
 }
